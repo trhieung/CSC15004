@@ -10,9 +10,9 @@
             }
         },
         {
-            "use": "@vercel/transformers-build",
+            "use": "@vercel/transformers",
             "config": {
-                "distDir": "transformersfiles_build"
+                "distDir": "transformersfiles"
             }
         }
     ],
