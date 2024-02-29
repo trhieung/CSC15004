@@ -11,16 +11,16 @@
         },
         {
             "src": "build_files.sh",
-            "use": "@vercel/static-build",
+            "use": "@vercel/transformers-build",
             "config": {
-                "distDir": "staticfiles_build"
+                "distDir": "transformersfiles_build"
             }
         }
     ],
     "routes": [
         {
-            "src": "/static/(.*)",
-            "dest": "/static/$1"
+            "src": "/transformers/(.*)",
+            "dest": "/transformers/$1"
         },
         {
             "src": "/(.*)",
