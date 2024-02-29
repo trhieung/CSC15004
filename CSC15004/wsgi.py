@@ -15,4 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CSC15004.settings')
 
 application = get_wsgi_application()
 
-app = application
+# vercel_app/wsgi.py
+vercel_app = application

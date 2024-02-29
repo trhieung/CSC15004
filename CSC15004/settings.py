@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'transformers',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +71,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'CSC15004.wsgi.application'
+# CSC15004/settings.py
+WSGI_APPLICATION = 'CSC15004.wsgi.vercel_app'
 
 
 # Database
