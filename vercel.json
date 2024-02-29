@@ -8,19 +8,9 @@
                 "maxLambdaSize": "15mb",
                 "runtime": "python3.9"
             }
-        },
-        {
-            "use": "@vercel/transformers",
-            "config": {
-                "distDir": "transformersfiles"
-            }
         }
     ],
     "routes": [
-        {
-            "src": "/transformers/(.*)",
-            "dest": "/transformers/$1"
-        },
         {
             "src": "/(.*)",
             "dest": "CSC15004/wsgi.py"
